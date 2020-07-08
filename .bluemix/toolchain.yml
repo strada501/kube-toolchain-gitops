@@ -62,10 +62,3 @@ services:
         execute: true
   webide:
     service_id: orion
-form:
-  pipeline:
-    parameters:
-      app-name: '{{services.repo.parameters.repo_name}}'
-      prod-cluster-namespace: prod
-    schema:
-      $ref: deploy.json
